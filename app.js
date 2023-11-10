@@ -4,15 +4,18 @@ const player2 = prompt('player2');
 
 
 
-let currentScore = 0;
+
 
 
 
 const rollDice = document.getElementById('rollDice')
 const diceImage = document.getElementsByTagName("img")[0];
-let currentScore = document.getElementById('currentScore');
-let totalScore1 = document.getElementById()
-let totalScore2 = document.getElementById()
+let currentScore1 = document.getElementById('currentScore1');
+let currentScore2 = document.getElementById('currentScore1');
+let totalScore1 = document.getElementById('totalScore1');
+let totalScore2 = document.getElementById('totalScore2')
+
+currentScore1 = 0;
 
 rollDice.addEventListener('click', () =>   {
     let numberOfDice = Math.ceil(Math.random() * 6) 
