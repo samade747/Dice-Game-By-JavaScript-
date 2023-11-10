@@ -19,6 +19,11 @@ let currentScoreHtml1 = document.getElementById('currentScore1');
 let currentScoreHtml2 = document.getElementById('currentScore2');
 
 
+totalScore1.textContent = currentScore1; 
+
+
+totalScore2.textContent = currentScore2;
+
 
 currentScore1 = 0;
 currentScore2 = 0;
