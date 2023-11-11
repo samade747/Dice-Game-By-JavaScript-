@@ -10,8 +10,8 @@ let currentScore2 = document.getElementById('currentScore2');
 let totalScore1 = document.getElementById('totalScore1');
 let totalScore2 = document.getElementById('totalScore2')
 
-let currentScoreHtml1 = document.getElementById('currentScore1');
-let currentScoreHtml2 = document.getElementById('currentScore2');
+// let currentScoreHtml1 = document.getElementById('currentScore1');
+// let currentScoreHtml2 = document.getElementById('currentScore2');
 
 
 
@@ -44,15 +44,15 @@ rollDice.addEventListener('click', () => {
     if (numberOfDice == 1) {
         player1Turn = !player1Turn;
         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`);
-        currentScoreHtml1.textContent = currentScore1 = 0;
-        currentScoreHtml2.textContent = currentScore2 = 0;
+        currentScore1.textContent = currentScore1 = 0;
+        currentScore2.textContent = currentScore2 = 0;
     } else {
         if (player1Turn) {
-            currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
-            totalScore1.textContent = `Total Score: ${+totalScore1.textContent.split(' ')[1] + numberOfDice}`;
+            currentScore1.textContent = currentScore1 = +currentScore1 + numberOfDice;
+            totalScore1.textContent = `Total Score: ${parseInt(totalScore1.textContent.split(' ')[1]) + numberOfDice}`;
         } else {
-            currentScoreHtml2.textContent = currentScore2 = +currentScore2 + numberOfDice;
-            totalScore2.textContent = `Total Score: ${+totalScore2.textContent.split(' ')[1] + numberOfDice}`;
+            currentScore2.textContent = currentScore2 = +currentScore2 + numberOfDice;
+            totalScore2.textContent = `Total Score: ${parseInt(totalScore2.textContent.split(' ')[1]) + numberOfDice}`;
         }
     }
 });
