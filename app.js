@@ -50,10 +50,10 @@ rollDice.addEventListener('click', () => {
     } else {
         if (player1Turn) {
             currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
-            totalScore1.textContent = `Total Score: ${totalScore1.value + numberOfDice}`;
+            totalScore1.textContent = String(Number(totalScore1.textContent) + numberOfDice);
         } else {
             currentScoreHtml2.textContent = currentScore2 = +currentScore2 + numberOfDice;
-            totalScore2.textContent = `Total Score: ${totalScore2.value + numberOfDice}`;
+            totalScore2.textContent = String(Number(totalScore2.textContent) + numberOfDice);
         }
     }
 });
