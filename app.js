@@ -58,46 +58,6 @@ rollDice.addEventListener('click', () => {
 });
 
 
-// rollDice.addEventListener('click', () =>   {
-//     let numberOfDice = Math.ceil(Math.random() * 6) 
-
-//     diceImage.src = `./images/${numberOfDice}.png`
-
-//     if(numberOfDice == 1){
-//         player1Turn = !player1Turn
-//         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`)
-//         currentScoreHtml1.textContent = currentScore1 = 0;
-//         currentScoreHtml2.textContent = currentScore2 = 0;
-        
-//     } else {
-//         if(player1Turn) {
-//             currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
-//             totalScore1.textContent = `Total Score: ${+totalScore1.textContent.split(' ')[1] + numberOfDice}`;
-//         } else {
-//             currentScoreHtml2.textContent = currentScore2 = +currentScore2.value + numberOfDice;
-//             totalScore2.textContent = `Total Score: ${+totalScore2.textContent.split(' ')[1] + numberOfDice}`;
-//         }
-//     }
-
-// })
-
-// if(numberOfDice == 1){
-//         player1Turn = !player1Turn
-//         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`)
-//         currentScoreHtml1.textContent = currentScore1.value = 0;
-//         currentScoreHtml2.textContent = currentScore2.value = 0;
-        
-//     } else {
-//         if(player1Turn) {
-//             currentScoreHtml1.innerHTML = currentScore1.textContent = +currentScore1.value + numberOfDice;
-//           totalScore1.textContent = `Total Score ${parseInt(totalScore1.textContent) + numberOfDice}`;
-        
-//         } else {
-//             currentScoreHtml2.innerHTML = currentScore2.textContent = +currentScore2.value + numberOfDice;
-//             totalScore2.textContent = `Total Score ${parseInt(totalScore2.textContent) + numberOfDice}`;
-            
-//         }
-//     }
 
 
 
