@@ -4,7 +4,7 @@ let playerName1 = document.getElementById('player1');
 let playerName2 = document.getElementById('player2');
 
 const rollDice = document.getElementById('rollDice')
-const diceImage = document.getElementsByTagName("img")[`${0}`];
+const diceImage = document.getElementsByTagName("img")[0];
 let currentScore1 = document.getElementById('currentScore1');
 let currentScore2 = document.getElementById('currentScore2');
 let totalScore1 = document.getElementById('totalScore1');
@@ -39,7 +39,7 @@ currentScore2 = 0;
 rollDice.addEventListener('click', () => {
     let numberOfDice = Math.ceil(Math.random() * 6);
 
-   diceImage = diceImage.src = `./images/${numberOfDice}.png`;
+   diceImage.src = `./images/${numberOfDice}.png`;
 
     if (numberOfDice == 1) {
         player1Turn = !player1Turn;
