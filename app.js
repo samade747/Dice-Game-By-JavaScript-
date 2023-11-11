@@ -1,4 +1,4 @@
-const player1Turn = true;
+let player1Turn = true;
 
 let playerName1 = document.getElementById('player1');
 let playerName2 = document.getElementById('player2');
@@ -13,13 +13,12 @@ let totalScore2 = document.getElementById('totalScore2')
 let currentScoreHtml1 = document.getElementById('currentScore1');
 let currentScoreHtml2 = document.getElementById('currentScore2');
 
-currentScore1 = 0;
-currentScore2 = 0;
 
 
 
- totalScore1.textContent = `TotalScore: ${currentScore1}`;
- totalScore2.textContent = `TotalScore: ${currentScore2}`;
+
+ totalScore1.textContent = 0;
+ totalScore2.textContent = 0;
 
 function submit1(){
     const player1Input = document.querySelector('#player1Input');   
@@ -34,27 +33,71 @@ function submit2(){
     
 }
 
+currentScore1 = 0;
+currentScore2 = 0;
 
-rollDice.addEventListener('click', () =>   {
-    let numberOfDice = Math.ceil(Math.random() * 6) 
+rollDice.addEventListener('click', () => {
+    let numberOfDice = Math.ceil(Math.random() * 6);
 
-    diceImage.src = `./images/${numberOfDice}.png`
+    diceImage.src = `./images/${numberOfDice}.png`;
 
-if(numberOfDice === 1){
-       player1Turn = !player1Turn
-        alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`)
-        currentScoreHtml1.textContent = currentScore1.textContent = 0;
-        currentScoreHtml2.textContent = currentScore2.textContent = 0;
-        
+    if (numberOfDice == 1) {
+        player1Turn = !player1Turn;
+        alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`);
+        currentScoreHtml1.textContent = currentScore1 = 0;
+        currentScoreHtml2.textContent = currentScore2 = 0;
     } else {
-        if(player1Turn) {
-          currentScoreHtml1.textcontent = currentScore1.textContent = +currentScore1.textContent + numberOfDice;
-          totalScore1.textContent = `Total Score ${+totalScore1.textContent + numberOfDice}`;
-        //   document.getElementById('Section1').style.background = 'blue'
+        if (player1Turn) {
+            currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
+            totalScore1.textContent = `Total Score: ${+totalScore1.textContent.split(' ')[1] + numberOfDice}`;
         } else {
-            currentScoreHtml2.textcontent = currentScore2.textContent = +currentScore2.textContent + numberOfDice;
-            totalScore2.textContent = `Total Score ${+totalScore2.textContent + numberOfDice}`;
-            // document.getElementById('Section1').style.background = 'blue'
+            currentScoreHtml2.textContent = currentScore2 = +currentScore2 + numberOfDice;
+            totalScore2.textContent = `Total Score: ${+totalScore2.textContent.split(' ')[1] + numberOfDice}`;
         }
     }
-})
+});
+
+
+// rollDice.addEventListener('click', () =>   {
+//     let numberOfDice = Math.ceil(Math.random() * 6) 
+
+//     diceImage.src = `./images/${numberOfDice}.png`
+
+//     if(numberOfDice == 1){
+//         player1Turn = !player1Turn
+//         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`)
+//         currentScoreHtml1.textContent = currentScore1 = 0;
+//         currentScoreHtml2.textContent = currentScore2 = 0;
+        
+//     } else {
+//         if(player1Turn) {
+//             currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
+//             totalScore1.textContent = `Total Score: ${+totalScore1.textContent.split(' ')[1] + numberOfDice}`;
+//         } else {
+//             currentScoreHtml2.textContent = currentScore2 = +currentScore2.value + numberOfDice;
+//             totalScore2.textContent = `Total Score: ${+totalScore2.textContent.split(' ')[1] + numberOfDice}`;
+//         }
+//     }
+
+// })
+
+// if(numberOfDice == 1){
+//         player1Turn = !player1Turn
+//         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`)
+//         currentScoreHtml1.textContent = currentScore1.value = 0;
+//         currentScoreHtml2.textContent = currentScore2.value = 0;
+        
+//     } else {
+//         if(player1Turn) {
+//             currentScoreHtml1.innerHTML = currentScore1.textContent = +currentScore1.value + numberOfDice;
+//           totalScore1.textContent = `Total Score ${parseInt(totalScore1.textContent) + numberOfDice}`;
+        
+//         } else {
+//             currentScoreHtml2.innerHTML = currentScore2.textContent = +currentScore2.value + numberOfDice;
+//             totalScore2.textContent = `Total Score ${parseInt(totalScore2.textContent) + numberOfDice}`;
+            
+//         }
+//     }
+
+
+
