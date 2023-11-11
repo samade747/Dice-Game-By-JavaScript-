@@ -4,7 +4,7 @@ let playerName1 = document.getElementById('player1');
 let playerName2 = document.getElementById('player2');
 
 let rollDice = document.getElementById('rollDice')
-let diceImage = document.getElementsByTagName("img")[0];
+let diceImage = document.getElementById("imagesall");
 let currentScore1 = document.getElementById('currentScore1');
 let currentScore2 = document.getElementById('currentScore2');
 let totalScore1 = document.getElementById('totalScore1');
