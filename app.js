@@ -10,8 +10,8 @@ let currentScore2 = document.getElementById('currentScore2');
 let totalScore1 = document.getElementById('totalScore1');
 let totalScore2 = document.getElementById('totalScore2')
 
-// let currentScoreHtml1 = document.getElementById('currentScore1');
-// let currentScoreHtml2 = document.getElementById('currentScore2');
+let currentScoreHtml1 = document.getElementById('currentScore1');
+let currentScoreHtml2 = document.getElementById('currentScore2');
 
 
 
@@ -44,14 +44,14 @@ rollDice.addEventListener('click', () => {
     if (numberOfDice == 1) {
         player1Turn = !player1Turn;
         alert(`turn change ${player1Turn ? playerName1.textcontent : playerName2.textcontent}`);
-        currentScore1.textContent = currentScore1 = 0;
-        currentScore2.textContent = currentScore2 = 0;
+        currentScoreHtml1.textContent = currentScore1 = 0;
+        currentScoreHtml2.textContent = currentScore2 = 0;
     } else {
         if (player1Turn) {
-            currentScore1.textContent = currentScore1 = +currentScore1 + numberOfDice;
+            currentScoreHtml1.textContent = currentScore1 = +currentScore1 + numberOfDice;
             totalScore1.textContent = `Total Score: ${totalScore1.value + numberOfDice}`;
         } else {
-            currentScore2.textContent = currentScore2 = +currentScore2 + numberOfDice;
+            currentScoreHtml2.textContent = currentScore2 = +currentScore2 + numberOfDice;
             totalScore2.textContent = `Total Score: ${totalScore2.value + numberOfDice}`;
         }
     }
