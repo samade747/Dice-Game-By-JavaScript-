@@ -18,7 +18,7 @@ let currentScoreHtml2 = document.getElementById('currentScore2');
 
 
 
- totalScore1.textContent = 0;
+ totalScore1.textContent = 0;   
  totalScore2.textContent = 0;
 
 function submit1(){
@@ -56,7 +56,7 @@ rollDice.addEventListener('click', () => {
             totalScore2.textContent = String(Number(totalScore2.textContent) + numberOfDice);
         }
     }
-});
+}); 
 
 
 
