@@ -39,7 +39,7 @@ currentScore2 = 0;
 rollDice.addEventListener('click', () => {
     let numberOfDice = Math.ceil(Math.random() * 6);
 
-    diceImage.src = `./images/${numberOfDice}.png`;
+   diceImage = diceImage.src = `./images/${numberOfDice}.png`;
 
     if (numberOfDice == 1) {
         player1Turn = !player1Turn;
