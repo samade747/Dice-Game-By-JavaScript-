@@ -12,10 +12,10 @@
 </head>
 <body>
 
-<div class="container-fluid " style="border: 2px solid red;">
+<div class="container-fluid " style="border: 2px solid red; background-image: url(./images/.png); background-repeat: no-repeat; ">
     <div class="row">
-        <div class="col-4 " id="Section1">
-
+        <div class="col-4 " id="Section1" >
+ 
             <div>
                <h1 id="player1">player1</h1>
                <div class="col-6" id="1display">
@@ -45,18 +45,18 @@
 
 <div class="col-4">
 
-    <div>
-        <div id="turnChangeMessage"></div>
+    <div class="d-flex justify-content-center flex-direction-row">
+        <div id="turnChangeMessage" class="btn btn-warning text-white">TURN</div>
         <button onclick="#" btn btn-primary" disabled>New Game</button>
     </div>
 
-    <div >
-        <img src="" alt="" class="w-50 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="imagesall">
+    <div class="d-flex justify-content-center align-items-center" >
+        <img src="" alt="" class="w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="imagesall">
     </div>
-
+    <div class="d-flex justify-content-center align-items-center">
     <button id="rollDice" class="btn btn-outline-primary">Roll DIce</button>
     <button onclick="hold()" class="btn btn-outline-warning">Hold Button</button>
-
+    </div>
 </div>
 
 <div class="col-4 " id="Section1">
