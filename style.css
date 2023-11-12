@@ -1,10 +1,6 @@
 .box{   
-    background-image: url(./images/Background2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50px;
+        
     
-    /* background-color: red !important; 
     border-radius: 36px;
     background: linear-gradient(145deg, #7c69d8, #947dff);
     box-shadow:  20px 20px 60px #7563cc,
