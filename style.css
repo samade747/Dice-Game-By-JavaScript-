@@ -1,0 +1,7 @@
+.box{   
+    background-color: red !important; 
+    border-radius: 36px;
+    background: linear-gradient(145deg, #7c69d8, #947dff);
+    box-shadow:  20px 20px 60px #7563cc,
+             -20px -20px 60px #9f87ff;
+}

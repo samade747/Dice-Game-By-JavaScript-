@@ -14,8 +14,8 @@ let turnChangeMessage = document.getElementById('turnChangeMessage');
 let currentScoreHtml1 = document.getElementById('currentScore1');
 let currentScoreHtml2 = document.getElementById('currentScore2');
 
-
-
+let box1 = document.getElementById('Section1');
+let box2 = document.getElementById('Section2');
 
 
  totalScore1.textContent = 0;   
@@ -51,6 +51,7 @@ rollDice.addEventListener('click', () => {
         if (player1Turn) {
             currentScoreHtml1.textContent = numberOfDice;
             totalScore1.textContent = String(Number(totalScore1.textContent) + numberOfDice);
+            document.getElementById('Section1').setAttribute('class', 'col-4 box')
         } else {
             currentScoreHtml2.textContent = numberOfDice;
             totalScore2.textContent = String(Number(totalScore2.textContent) + numberOfDice);
