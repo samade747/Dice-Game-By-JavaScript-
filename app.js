@@ -51,11 +51,11 @@ rollDice.addEventListener('click', () => {
         if (player1Turn) {
             currentScoreHtml1.textContent = numberOfDice;
             totalScore1.textContent = String(Number(totalScore1.textContent) + numberOfDice);
-            document.getElementById('Section1').setAttribute('class', 'col-lg-4 col-sm-12 col-md-12 box ')
-            document.getElementById('Section2').setAttribute('class', 'col-lg-4 col-sm-12 col-md-12')
+            document.getElementById('Section1').setAttribute('class', 'col-lg-4 col-sm-12 col-md-6 box ')
+            document.getElementById('Section2').setAttribute('class', 'col-lg-4 col-sm-12 col-md-6')
         } else {
-            document.getElementById('Section1').setAttribute('class', 'col-lg-4 col-sm-12 col-md-12')
-            document.getElementById('Section2').setAttribute('class', 'col-lg-4 col-sm-12 col-md-12 box ')
+            document.getElementById('Section1').setAttribute('class', 'col-lg-4 col-sm-12 col-md-6')
+            document.getElementById('Section2').setAttribute('class', 'col-lg-4 col-sm-12 col-md-6 box ')
             currentScoreHtml2.textContent = numberOfDice;
             totalScore2.textContent = String(Number(totalScore2.textContent) + numberOfDice);
         }
