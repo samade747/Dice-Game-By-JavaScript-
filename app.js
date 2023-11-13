@@ -24,13 +24,13 @@ let box2 = document.getElementById('Section2');
 function submit1(){
     const player1Input = document.querySelector('#player1Input');   
     playerName1.textContent = player1Input.value || 'player 1';
-    document.getElementById('1display').style.display = 'none'
+    document.getElementById('1display').style.display = 'none';
 }
 
 function submit2(){    
     const player2Input = document.querySelector('#player2Input');    
     playerName2.textContent = player2Input.value || 'player 2';
-    document.getElementById('2display').style.display = 'none'
+    document.getElementById('2display').style.display = 'none';
     
 }
 
