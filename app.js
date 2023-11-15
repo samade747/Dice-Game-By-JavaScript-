@@ -66,3 +66,9 @@ function hold() {
     player1Turn = !player1Turn;
     turnChangeMessage.textContent = `Turn ${player1Turn ? playerName1.textContent : playerName2.textContent}`;
 }
+
+
+function newGame(){
+
+    
+}
