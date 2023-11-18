@@ -1,5 +1,7 @@
 let player1Turn = true;
 
+
+
 let playerName1 = document.getElementById('player1');
 let playerName2 = document.getElementById('player2');
 
@@ -68,7 +70,13 @@ function hold() {
 }
 
 
-function newGame(){
-
-    
+function newGame(){   
+    console.log('new game')
+    player1Turn = true;
+    console.log(player1Turn)
+    totalScore1.textContent = 0;   
+    totalScore2.textContent = 0;
+    currentScore1 = 0;
+    currentScore2 = 0;
+    turnChangeMessage.textContent = `Turn : ${player1Turn ? playerName1.textContent : playerName2.textContent}`;
 }
