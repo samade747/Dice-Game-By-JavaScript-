@@ -78,5 +78,7 @@ function newGame(){
     totalScore2.textContent = 0;
     currentScore1 = 0;
     currentScore2 = 0;
+    currentScoreHtml1.textContent = currentScore1 = 0;
+    currentScoreHtml2.textContent = currentScore2 = 0;
     turnChangeMessage.textContent = `Turn : ${player1Turn ? playerName1.textContent : playerName2.textContent}`;
 }
